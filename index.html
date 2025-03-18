@@ -65,10 +65,10 @@
 											<br/>
 											I'm a junior software tester searching for a opportunity to work with experienced Testers and Programmers. <br />
 											
-											<b>Technical Skills:</b><br/>
+											<b>Technical Skills:</b><br/>wwww
 
 •	Good knowledge of Software testing techniques covered in the ISTQB syllabus <br/>
-•	Good knowledge about Software Testing Tools (Mantis-JIRA-Trello-Selenium IDE, SoapUI, Postman)<br/> 
+•	Good knowledge about Software Testing Tools (Mantis, JIRA, Trello, Selenium IDE, SoapUI, Postman)<br/> 
 •	Good knowledge about writing SQL queries <br/>
 •	Good knowledge about programming in C# Language <br/>
 •	Good knowledge Java script, HTML, CSS  <br/>
@@ -135,8 +135,10 @@
 			//Add date time here 
 			function updateDateTime() {
             const now = new Date();
-            const formattedDateTime = now.toLocaleString(); // Formats the date & time
-            document.getElementById("CasPraveTeraz").textContent = formattedDateTime;
+            var formattedDate  = now.toLocaleDateString('en-GB'); // Formats the date & time
+			const formatedTime = now.toLocaleTimeString();
+            document.getElementById("CasPraveTeraz").innerHTML = formattedDate + "<br/>" + formatedTime;  
+			console.log();
         }
 
         	updateDateTime(); // Call the function immediately
