@@ -2588,6 +2588,23 @@ input, select, textarea {
 
 /* Image */
 
+		#art1{
+			animation-name: slideup;
+			animation-duration: 3s;
+		}
+		#id1{
+			transform: scale(0.9);
+			animation-name: slideleft;
+			animation-duration: 2s;
+		}
+
+		@keyframes slideleft{ 
+			from{transform: translateX(80%)}
+		}
+
+		@keyframes slideup{ 
+			from{transform: translateY(70%)}
+		}
 	.image {
 		border: 0;
 		display: inline-block;
